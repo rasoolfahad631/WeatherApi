@@ -1,0 +1,38 @@
+
+<html>
+{%load static%}
+    <head>
+        <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css">
+    </head>
+        <div class="widget">
+            <form action="" method ="post">
+                {% csrf_token %}
+                <input type="text" name="city" placeholder="Search Location">
+            </form
+            <br></br>
+            <br>
+            <div class="left-panel panel">
+                <div class="city">
+                    <h1>{{city}}</h1> 
+                </div>
+                <div class="date">
+                    <h3>{{y}}</h3>
+                    <h3>{{x}}</h3> 
+                </div>
+                <div class="weather">
+                    <h3>{{weather}}</h3>
+                </div>
+                <br>
+                <div class="temp">
+                    <img class="image" src="http://openweathermap.org/img/w/{{ weather_icon }}.png" alt="Image">                
+                        <p style="text-align:right;float:right;">{{temprature}}&degC</p>
+                </div>
+                <div class="right-panel panel">
+                    <p>Humidity : {{humidity}}%</p>
+                    <p>Pressure : {{pressure}}mb</p>
+                    <p>Wind : {{wind}}m/s</p>
+                </div>
+            </div>
+   
+        </div>
+</html>

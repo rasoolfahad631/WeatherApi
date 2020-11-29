@@ -1,0 +1,89 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body
+{
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  background: #d22222;;
+}
+
+div.widget
+{
+  position: relative;
+  width: 35%;
+  height: 50%;
+  margin: 150px auto;
+  background-color: #fcfdfd;
+  border-radius: 9px;
+  padding: 25px;
+  padding-right: 30px;
+  box-shadow: 0px 31px 35px -26px #080c21;
+}
+
+
+
+div.date
+{
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 5px;
+    color: rgba(0,0,0,0.6);
+}
+
+div.city
+{
+  font-size: 21px;
+  font-weight: bold;
+  padding-top: 5px;
+  color: rgba(0,0,0,0.6);
+}
+
+div.temp
+{
+    font-size: 81px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 5px;
+    color: rgba(0,0,0,0.9);
+}
+
+div.panel
+{
+  display: inline-block;
+}
+
+div.right-panel
+{
+  position: absolute;
+  float: right;
+  top: 0;
+  margin-top: 135px;
+  padding-left: 350px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(0,0,0,0.6);
+}
+
+input[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+    width:90%;
+    height: 15%;
+  }
+  
+div.weather {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 5px;
+    color: rgba(0,0,0,0.6);
+
+}
+img.image {
+    padding-top: 5px;
+    width: 90px;
+}
